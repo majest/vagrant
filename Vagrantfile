@@ -34,7 +34,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         chef.add_recipe "apache-sites"
         chef.add_recipe "composer"
         chef.add_recipe "vim"
-	chef.add_recipe "ipfw"
         chef.json.merge!({
             "sites" => ["link"]
         })
