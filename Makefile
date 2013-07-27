@@ -39,7 +39,7 @@ help: all
 # Run almost everything from the ground up
 # Update submodules, bring vagrant up, install composer, create a database, install the laravel migration table, migrate and publish assets
 # Use: make vagrant
-vagrant: submodules up composer-install-dev createdb migrate-install migrate publish 
+vagrant: submodules up
 
 # Alias to migrate-install and migrate
 # Use: make vagrant-install-and-migrate

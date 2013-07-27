@@ -6,12 +6,13 @@ VAGRANTFILE_API_VERSION = "2"
 
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
   config.vm.box = "precise32.box"
   config.vm.box_url = "http://files.vagrantup.com/precise32.box"
-  config.vm.network :forwarded_port, guest: 80, host: 8080
+  config.vm.network :forwarded_port, guest: 80, host: 2345
+  config.vm.network :public_network, ip: "192.168.10.10" 
  
   config.vm.provision :chef_solo do |chef|
-
 
      	chef.cookbooks_path = "chef/cookbooks"
         chef.data_bags_path = "chef/data_bags"
@@ -33,14 +34,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         chef.add_recipe "apache-sites"
         chef.add_recipe "composer"
         chef.add_recipe "vim"
-
+	chef.add_recipe "ipfw"
         chef.json.merge!({
-            "sites" => ["default"]
+            "sites" => ["link"]
         })
 
 	end
 
 	config.vm.synced_folder "~/Sites", "/var/www/sites"
-	config.vm.provision :shell, :path => "init.sh"
 
 end

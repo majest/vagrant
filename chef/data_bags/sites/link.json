@@ -1,0 +1,8 @@
+{
+    "id": "link",
+    "host": "link.dev",
+    "aliases": [
+        "adminlink.dev"
+    ],
+    "docroot": "/var/www/sites/link/public"
+}
