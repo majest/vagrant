@@ -75,7 +75,7 @@ up:
 # Clean vagrant up and re-download/re-up it
 # Use: make vagrant-clean
 vagrant-clean:
-	vagrant destroy && vagrant box remove <boxname>  && make vagrant
+	vagrant destroy && vagrant box remove precise32.box && make vagrant
 
 # Download an install composer in this project 
 # Use: make composer-download

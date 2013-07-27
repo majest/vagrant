@@ -27,7 +27,7 @@
 	url = git@github.com:opscode-cookbooks/openssl.git
 [submodule "chef/cookbooks/php"]
 	path = chef/cookbooks/php
-	url = git@github.com:opscode-cookbooks/php.git
+	url = git@github.com:majest/php.git
 [submodule "chef/cookbooks/users"]
 	path = chef/cookbooks/users
 	url = git@github.com:opscode-cookbooks/users.git
@@ -55,3 +55,6 @@
 [submodule "chef/cookbooks/curl"]
 	path = chef/cookbooks/curl
 	url = git@github.com:phlipper/chef-curl.git
+[submodule "chef/cookbooks/vim"]
+	path = chef/cookbooks/vim
+	url = git@github.com:opscode-cookbooks/vim.git
