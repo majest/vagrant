@@ -1,0 +1,9 @@
+{
+    "id": "vt",
+    "host": "vt.dev",
+    "appenv": "vtdev",
+    "aliases": [
+        "vt.dev"
+    ],
+    "docroot": "/var/www/sites/link/public"
+}

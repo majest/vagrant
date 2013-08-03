@@ -1,0 +1,9 @@
+{
+    "id": "admin",
+    "host": "admin.dev",
+    "appenv": "admindev",
+    "aliases": [
+        "admin.dev"
+    ],
+    "docroot": "/var/www/sites/link/public"
+}
