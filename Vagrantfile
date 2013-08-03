@@ -35,11 +35,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         chef.add_recipe "composer"
         chef.add_recipe "vim"
         chef.json.merge!({
-            "sites" => ["link"]
+            "sites" => ["link","vt","nar","admin"]
         })
 
 	end
 
-	config.vm.synced_folder "~/Sites", "/var/www/sites", :owner => 'vagrant', :group=>'www-data',  :extra => 'dmode=775,fmode=775'
+	config.vm.synced_folder "~/Sites", "/var/www/sites", :owner => 'vagrant', :group=>'vagrant',  :extra => 'dmode=777,fmode=777'
 
 end

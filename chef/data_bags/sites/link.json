@@ -1,6 +1,7 @@
 {
     "id": "link",
     "host": "link.dev",
+    "appenv": "linkdev",
     "aliases": [
         "adminlink.dev"
     ],

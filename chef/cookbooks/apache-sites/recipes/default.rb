@@ -24,6 +24,7 @@ sites.each do |name|
     server_name site["host"]
     server_aliases site["aliases"]
     docroot site["docroot"]
+    appenv site["appenv"]
   end
 
   # Add site info in /etc/hosts
