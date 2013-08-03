@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "precise32.box"
   config.vm.box_url = "http://files.vagrantup.com/precise32.box"
   config.vm.network :forwarded_port, guest: 80, host: 2345
-  config.vm.network :public_network, ip: "192.168.10.10" 
+  config.vm.network :public_network , ip: "192.168.10.10", :public_network => "en0"
  
   config.vm.provision :chef_solo do |chef|
 
@@ -40,6 +40,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 	end
 
-	config.vm.synced_folder "~/Sites", "/var/www/sites"
+	config.vm.synced_folder "~/Sites", "/var/www/sites", :owner => 'vagrant', :group=>'www-data',  :extra => 'dmode=775,fmode=775'
 
 end
