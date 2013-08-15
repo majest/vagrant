@@ -41,7 +41,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         chef.add_recipe "composer"
         chef.add_recipe "vim"
         chef.json.merge!({
-            "sites" => ["link","vt","nar","admin"]
+            "sites" => ["link","vt","nar","admin","modeo","arnet-site"]
         })
 
 	end

@@ -1,0 +1,9 @@
+{
+    "id": "arnet-site",
+    "host": "arnet.dev",
+    "appenv": "arnet",
+    "aliases": [
+        "arnet.dev"
+    ],
+    "docroot": "/var/www/sites/arnet-site/web"
+}

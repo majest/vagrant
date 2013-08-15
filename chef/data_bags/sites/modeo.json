@@ -1,0 +1,9 @@
+{
+    "id": "modeo",
+    "host": "modeo.dev",
+    "appenv": "dev",
+    "aliases": [
+        "modeo.dev"
+    ],
+    "docroot": "/var/www/sites/modeo/web"
+}
