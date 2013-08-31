@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provider :virtualbox do |vb|
     #vb.customize ["modifyvm", :id, "--cpuexecutioncap", "60"]
-    vb.customize ["modifyvm", :id, "--memory", 1024]
+    vb.customize ["modifyvm", :id, "--memory", 512]
   end
 
   config.vm.provision :chef_solo do |chef|
@@ -41,7 +41,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         chef.add_recipe "composer"
         chef.add_recipe "vim"
         chef.json.merge!({
-            "sites" => ["link","vt","nar","admin","modeo","arnet-site"]
+            "sites" => ["link","vt","vts","nars","nar","admin","modeo","arnet-site"]
         })
 
 	end

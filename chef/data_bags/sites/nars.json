@@ -1,0 +1,9 @@
+{
+    "id": "nars",
+    "host": "nars.dev",
+    "appenv": "narsdev",
+    "aliases": [
+        "nars.dev"
+    ],
+    "docroot": "/var/www/sites/clients/nar/web"
+}

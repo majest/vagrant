@@ -1,0 +1,9 @@
+{
+    "id": "vts",
+    "host": "vts.dev",
+    "appenv": "vtsdev",
+    "aliases": [
+        "vts.dev"
+    ],
+    "docroot": "/var/www/sites/clients/vasstech/web"
+}
