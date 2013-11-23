@@ -46,6 +46,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 	end
 
-	config.vm.synced_folder "~/Sites", "/var/www/sites", :owner => 'vagrant', :group=>'vagrant',  :extra => 'dmode=777,fmode=777'
+	config.vm.synced_folder "~/Sites", "/var/www/sites", :owner => 'vagrant', :group=>'vagrant',  :mount_options => ['dmode=777,fmode=777']
 
 end

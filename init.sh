@@ -35,7 +35,7 @@ else
 fi
 
 cd $dir
-vagrant up
+vagrant up --provision
 echo "Cleating firewall, press y to accept changes"
 sudo ipfw flush
 sudo ipfw add 100 fwd 127.0.0.1,2345 tcp from any to me 80
